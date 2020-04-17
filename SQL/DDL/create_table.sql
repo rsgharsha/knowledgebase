@@ -1,7 +1,24 @@
---Below script is used to create xxxx table in yyyy schema
+use sql_practice;
 
-create table yyyy.xxxx {
- --below is col name and it's data type
- ccc dddd,
+-- Below script is used to create student table in sql_practice schema
 
-}
+create table students 
+( --   columnname 	datatype
+		`Id` 		int 			NOT NULL,
+		`Name` 		varchar(250) 	NOT NULL,
+		`Gender` 	varchar(25) 	NOT NULL,
+		`Age` 		int 			NOT NULL,
+		Primary key (`Id`)
+);
+
+-- describe the students table
+desc students;
+
+-- check only columns in the student table
+SELECT COLUMN_NAME
+FROM Information_schema.COLUMNS
+WHERE TABLE_NAME = 'students';
+
+
+
+
