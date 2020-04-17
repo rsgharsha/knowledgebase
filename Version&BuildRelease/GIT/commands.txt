@@ -11,3 +11,4 @@ git checkout existing_branch_name
 git branch
 git pull origin master
 git push -u origin new_local_branch_name
+git branch -d local_branch_name
