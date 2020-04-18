@@ -9,6 +9,5 @@ VALUES
     (5, 'Giri',  	'M', 	23),
     (6, 'Rupa', 	 'F',    21)
 ;
-
 -- retrive data from students table
 select * from students;
