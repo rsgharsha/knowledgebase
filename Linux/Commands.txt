@@ -1,0 +1,44 @@
+***************************************************
+Command 			how to use
+***************************************************
+
+whoami  	:	To know who logged in
+pwd     	:	Displays present working directory
+mkdir		:	Create directory
+ls		:	Lists directory contents
+cd		:	Changes current directory
+ls -a		:	To see hiden files
+mv		:	move or copy file(mv oldfile newfile)
+touch		:	create empty text file
+cat 		:	To view contents of files
+Date		:	shows the current date & time
+last		:	display who have logged on sysytem
+rm		:	delete the files
+rm -r		:	remove the directory and its contents recursively
+head		:	display first 10 lines of file
+tail		:	Displays last 1o files of file
+less		:	Displays less contents of file
+ps		:	Displays current running process
+kill pid	:	kill process with process ID of pid
+program&	:	strat program in the background
+du -sh		:   	Display total disk usage off the currrent directory
+du -ah		:	Display disk usage for all files and directories in human readable format
+cd ../..	:	To go up two level of the directory
+cd		:	Go to home directory
+
+***********************************************************
+
+File Permissions
+
+-(or)d - => regular file d => directory    -rwx rwx rwx (or) drwx rwx rwx
+
+-rwxrw-r-x -(rwx)(rw-)(r-x)   1 = user 2 = group 3 = others 		r = read(4) w = write(2) e = execute(1)
+	      1    2    3
+			
+filename     permissions
+
+chmod 777	 rwx rwx rwx 
+chmod 775	 rwx rwx r-x
+chmod 776	 rwx rwx rw-
+chmod 767	 rwx rw- rwx
+chmod 757	 rwx r-x rwx
