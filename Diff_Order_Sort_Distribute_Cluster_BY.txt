@@ -1,0 +1,34 @@
+x1
+x2
+x1
+x3
+x4
+x9
+x1
+x3
+
+Order by
+reducer-1: x1,x1,x1,x2,x3,x4,x9
+
+
+Sort by
+reducer-1: x1,x1,x2 
+reducer-2: x3,x4,x9
+reducer-3: x1,x3
+
+final reducer:x1,x1,x2,x3,x4,x9,x1,x3
+
+Ditribute by
+reducer-1: x1,x2,x1,x1 
+reducer-2: x3,x4,x3
+reducer-3: x9
+
+final reducer: x1,x2,x1,x1,x3,x4,x3,x9
+
+Cluster by
+reducer-1: x1,x1,x1,x2 
+reducer-2: x3,x3,x4
+reducer-3: x9
+
+final reducer: x1,x1,x1,x2,x3,x3,x4,x9
+
