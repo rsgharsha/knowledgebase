@@ -1,0 +1,9 @@
+1)skewness column
+	vw_modelvalue_get: modelgrouptype, srcsystemname
+	ModelValue		 : modelgrouptype, 
+2)shuffle partition column
+	vw_modelvalue_get: sourcevarname
+	ModelValue		 : 
+3)join tables
+
+ModelValue: OuterScenarioId, InnerScenarioId, OuterScenarioProjMonth, InnerScenarioProjMonth

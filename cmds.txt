@@ -1,0 +1,41 @@
+C:/Program Files/Java/jdk1.8.0_261/bin/java 
+
+java -cp C:/Users/reds89/Documents/JavaNFACTL/sample.jar dbr1.HelloWorld
+
+jar cvfm C:/Users/reds89/Documents/JavaNFACTL/sample.jar C:/Users/reds89/Documents/JavaNFACTL/manifest.txt *.class
+jar cvfe C:/Users/reds89/Documents/JavaNFACTL/sample.jar C:/Users/reds89/Documents/JavaNFACTL/manifest.txt *.class
+
+jar cvf C:/Users/reds89/Documents/JavaNFACTL/sample.jar C:/Users/reds89/Documents/JavaNFACTL/manifest.txt C:/Users/reds89/eclipse-workspace/dbr1/src/dbr1/HelloWorld.class 
+
+
+java -cp path/spark-sql_2.12-2.4.6.jar;C:/Users/reds89/Documents/JavaNFACTL/sample.jar dbr1.HelloWorld
+
+spark-submit --executors -10 --executormemory -10gb --jar dbr1.HelloWorld --files
+
+
+
+
+databricks fs cp dbfs:/cluster-logs/<cluster_id>/driver/ <local_destination> -r  --profile "stprod"
+
+ex:
+databricks fs cp dbfs:/cluster-logs/1017-184956-sirup1/driver/ ~/NFActuarial_Model_Prod -r  --profile "stprod" 
+or
+databricks fs cp dbfs:/cluster-logs/1017-184956-sirup1/driver/ ~/NFActuarial_Model_Prod -r
+databricks fs cp dbfs:/cluster-logs/1122-160025-sup8/driver/ ~/NFActuarial_Model_Prod -r
+
+
+There are also event and executor logs for each cluster. 
+databricks fs cp dbfs:/cluster-logs/1017-184956-sirup1/event/ ~/NFActuarial_Model_Prod -r
+databricks fs cp dbfs:/cluster-logs/1122-160025-sup8/event/ ~/NFActuarial_Model_Prod -r
+databricks fs cp dbfs:/cluster-logs/1017-184956-sirup1/executor/ ~/NFActuarial_Model_Prod -r
+databricks fs cp dbfs:/cluster-logs/1122-160025-sup8/executor/ ~/NFActuarial_Model_Prod -r
+
+dbfs:/cluster-logs/1029-142821-pekoe4/event/
+
+databricks fs cp dbfs:/cluster-logs/1029-142821-pekoe4/eventlog/1029-142821-pekoe4_10_142_16_196/6445151177414092103/ "C:/Users/reds89/Documents/Databricks-AWS/Drivers Logs" -r
+
+dapibd287db11eee7fba63f650048aec13bd
+
+curl -X GET -u `reds89:<password>` -H "Content-Type: application/json" \
+ 'https://accounts.cloud.databricks.com/api/2.0/accounts/<account-id>/<endpoint>'
+

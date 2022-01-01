@@ -1,0 +1,8 @@
+curl -n https://<databricks-instance>/api/2.0/clusters/spark-versions
+curl -n https://nationwide-prd.cloud.databricks.com/api/2.0/clusters/spark-versions
+
+curl -n \
+-X POST -H 'Content-Type: application/json' \
+-d '{ "job_id": 12253 }' https://nationwide-prd.cloud.databricks.com/api/2.0/jobs/run-now
+
+curl -X GET -H 'Authorization: Bearer dapib7f678eabf6f33649c1404f9e14b35fd' https://nationwide-prd.cloud.databricks.com/api/2.0/clusters/list
